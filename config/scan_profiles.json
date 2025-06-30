@@ -1,0 +1,96 @@
+{
+  "profiles": {
+    "quick": {
+      "description": "Quick host discovery and basic port scan",
+      "ports": "top-100",
+      "scripts": ["default"],
+      "timing": 3,
+      "max_retries": 2,
+      "os_detection": false,
+      "service_detection": true,
+      "estimated_duration": "5-15 minutes",
+      "network_impact": "low"
+    },
+    "standard": {
+      "description": "Comprehensive port scan with service enumeration",
+      "ports": "all",
+      "scripts": ["default", "discovery"],
+      "timing": 2,
+      "max_retries": 2,
+      "os_detection": true,
+      "service_detection": true,
+      "estimated_duration": "15-45 minutes",
+      "network_impact": "medium"
+    },
+    "comprehensive": {
+      "description": "Full vulnerability assessment with all NSE scripts",
+      "ports": "all",
+      "scripts": ["default", "vuln", "auth", "discovery"],
+      "timing": 1,
+      "max_retries": 3,
+      "os_detection": true,
+      "service_detection": true,
+      "estimated_duration": "30-90 minutes",
+      "network_impact": "high"
+    },
+    "stealth": {
+      "description": "Slow, quiet scanning with evasion techniques",
+      "ports": "top-1000",
+      "scripts": ["default"],
+      "timing": 5,
+      "max_retries": 1,
+      "os_detection": false,
+      "service_detection": false,
+      "estimated_duration": "60-180 minutes",
+      "network_impact": "very low"
+    },
+    "web": {
+      "description": "Web application focused scanning",
+      "ports": "80,443,8080,8443,3000,8000",
+      "scripts": ["http-*", "ssl-*", "vuln"],
+      "timing": 2,
+      "max_retries": 2,
+      "os_detection": false,
+      "service_detection": true,
+      "estimated_duration": "10-30 minutes",
+      "network_impact": "low"
+    },
+    "database": {
+      "description": "Database service focused scanning",
+      "ports": "1433,3306,5432,1521,6379,27017",
+      "scripts": ["db-*", "auth", "vuln"],
+      "timing": 2,
+      "max_retries": 2,
+      "os_detection": false,
+      "service_detection": true,
+      "estimated_duration": "10-25 minutes",
+      "network_impact": "low"
+    },
+    "enterprise": {
+      "description": "Enterprise network comprehensive assessment",
+      "ports": "all",
+      "scripts": ["default", "vuln", "auth", "discovery", "broadcast-*"],
+      "timing": 1,
+      "max_retries": 3,
+      "os_detection": true,
+      "service_detection": true,
+      "estimated_duration": "60-180 minutes",
+      "network_impact": "high"
+    }
+  },
+  "default_profile": "standard",
+  "rate_limits": {
+    "conservative": 100,
+    "normal": 1000,
+    "aggressive": 5000,
+    "max": 10000
+  },
+  "timing_templates": {
+    "paranoid": 0,
+    "sneaky": 1,
+    "polite": 2,
+    "normal": 3,
+    "aggressive": 4,
+    "insane": 5
+  }
+} 

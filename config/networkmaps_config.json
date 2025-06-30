@@ -1,0 +1,15 @@
+{
+  "visualization": {
+    "layout": "force-directed",
+    "node_color_scheme": "risk_score",
+    "edge_style": "solid",
+    "show_labels": true,
+    "interactive": true,
+    "export_formats": ["html", "svg", "png"]
+  },
+  "api": {
+    "enabled": false,
+    "port": 8081
+  },
+  "refresh_interval": 30
+} 

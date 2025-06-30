@@ -1,0 +1,40 @@
+{
+  "discovery": [
+    "broadcast-dhcp-discover",
+    "broadcast-dns-service-discovery",
+    "broadcast-netbios-master-browser",
+    "dns-brute",
+    "dns-service-discovery",
+    "ipidseq",
+    "path-mtu",
+    "traceroute-geolocation"
+  ],
+  "vulnerability": [
+    "vuln",
+    "auth",
+    "default",
+    "http-vuln-cve2017-5638",
+    "http-vuln-cve2017-8917",
+    "http-vuln-cve2018-1000861",
+    "http-vuln-cve2018-7600",
+    "ssl-heartbleed",
+    "smb-vuln-ms17-010",
+    "ftp-vsftpd-backdoor"
+  ],
+  "auth": [
+    "auth",
+    "auth-brute",
+    "auth-fuzzer",
+    "auth-spoof"
+  ],
+  "default": [
+    "default",
+    "discovery",
+    "safe"
+  ],
+  "custom": [
+    "custom_scripts/enhanced-discovery",
+    "custom_scripts/service-enum",
+    "custom_scripts/vulnerability-detect"
+  ]
+} 
