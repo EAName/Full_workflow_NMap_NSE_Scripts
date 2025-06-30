@@ -1,4 +1,4 @@
-# EAName: Full-Featured Nmap + NSE + NetworkMaps Workflow
+#Full-Featured Nmap + NSE + NetworkMaps Workflow
 
 [![Python](https://img.shields.io/badge/python-3.7%2B-blue.svg)](https://www.python.org/) 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) 
@@ -8,7 +8,7 @@
 
 ## ⚡️ Summary
 
-**EAName** is a powerful, open-source workflow for network discovery, vulnerability scanning, and dynamic topology visualization. It combines Nmap + NSE scripts with NetworkMaps for real-time, interactive network mapping—delivering functionality similar to Morpheus Map, but fully under your control.
+**This** is a powerful, open-source workflow for network discovery, vulnerability scanning, and dynamic topology visualization. It combines Nmap + NSE scripts with NetworkMaps for real-time, interactive network mapping—delivering functionality similar to Morpheus Map, but fully under your control.
 
 - **Automated discovery, scanning, and mapping**
 - **Customizable scan profiles and scripts**
